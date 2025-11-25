@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurante Casquinha - Amadora</title>
+  <meta name="description" content="Restaurante Casquinha na Amadora. Picanha, pratos do dia, comida caseira e ambiente familiar.">
+  
+  <!-- Google Analytics (troca G-XXXXXXXXXX pelo teu ID) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-XXXXXXXXXX");
+  </script>
+  -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <nav class="nav">
+      <div class="logo">Restaurante Casquinha</div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Restaurante Casquinha</h1>
+      <p>Comida caseira, picanha e muito sabor na Amadora.</p>
+      <a href="#reservas" class="btn-primary">Reservar mesa</a>
+      <a href="#menu" class="btn-secondary">Ver menu</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao">
+    <div class="container">
+      <h2>Sobre nós</h2>
+      <p>
+        No Casquinha encontras um ambiente descontraído, comida caseira e um serviço próximo.
+        Servimos picanha, pratos do dia e várias opções de grelhados e petiscos.
+      </p>
+      <p>
+        Trabalhamos com ingredientes frescos e foco na experiência do cliente, para que cada refeição
+        seja bem passada, sem pressas, como se estivesses em casa com amigos.
+      </p>
+    </div>
+  </section>
+
+  <section id="menu" class="secao fundo-claro">
+    <div class="container">
+      <h2>Menu principal</h2>
+      <div class="grade-menu">
+        <div class="card-menu">
+          <h3>Picanha na pedra</h3>
+          <p class="preco">17,90 €</p>
+          <p>Servida com arroz, batata frita, feijão preto e farofa.</p>
+        </div>
+        <div class="card-menu">
+          <h3>Prato do dia</h3>
+          <p class="preco">desde 8,50 €</p>
+          <p>Opções de carne, peixe e vegetariano, de segunda a sexta ao almoço.</p>
+        </div>
+        <div class="card-menu">
+          <h3>Sobremesas caseiras</h3>
+          <p class="preco">desde 2,50 €</p>
+          <p>Mousse, cheesecake, doces tradicionais e sugestões do dia.</p>
+        </div>
+      </div>
+      <p class="nota">
+        Menu completo disponível no restaurante. Preços e pratos podem sofrer alterações.
+      </p>
+    </div>
+  </section>
+
+  <section id="reservas" class="secao">
+    <div class="container">
+      <h2>Reservas</h2>
+      <p>Podes reservar mesa por telefone ou WhatsApp.</p>
+      <div class="reservas-opcoes">
+        <a href="tel:+351000000000" class="btn-primary">Ligar para reservar</a>
+        <a href="https://wa.me/351000000000" target="_blank" class="btn-secondary">Reservar por WhatsApp</a>
+      </div>
+      <p class="nota">
+        Para grupos grandes ou eventos, entra em contacto para combinarmos tudo com antecedência.
+      </p>
+    </div>
+  </section>
+
+  <section id="contactos" class="secao fundo-claro">
+    <div class="container">
+      <h2>Contactos e localização</h2>
+      <div class="grid-contactos">
+        <div>
+          <h3>Contactos</h3>
+          <p><strong>Morada:</strong> Amadora, Portugal</p>
+          <p><strong>Telefone:</strong> <a href="tel:+351000000000">+351 000 000 000</a></p>
+          <p><strong>Email:</strong> <a href="mailto:restaurante@casquinha.pt">restaurante@casquinha.pt</a></p>
+          <p><strong>Horário:</strong><br>
+            Segunda a sexta: 12h00 - 15h00 e 19h00 - 23h00<br>
+            Sábado e domingo: 12h00 - 23h00
+          </p>
+        </div>
+        <div>
+          <h3>Como chegar</h3>
+          <p>Podes colocar "Restaurante Casquinha" no Google Maps para traçar o caminho.</p>
+          <a href="https://www.google.com/maps" target="_blank" class="btn-secondary">
+            Abrir no Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="container rodape-content">
+      <p>© <span id="ano"></span> Restaurante Casquinha. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Atualizar automaticamente o ano no rodapé
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
