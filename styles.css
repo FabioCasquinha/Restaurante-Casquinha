@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #222;
+}
+
+/* Navegação */
+
+.topo {
+  background-color: #201915;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Menu mobile */
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0.25rem;
+}
+
+.btn-primary {
+  background-color: #c19a3f;
+  color: #201915;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Secções genéricas */
+
+.secao {
+  padding: 3rem 1rem;
+}
+
+.fundo-claro {
+  background-color: #f1ebe3;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.secao h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.secao p {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Menu cards */
+
+.grade-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-menu {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.card-menu h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.preco {
+  font-weight: 700;
+  color: #c19a3f;
+  margin-bottom: 0.5rem;
+}
+
+.nota {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Reservas */
+
+.reservas-opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Contactos */
+
+.grid-contactos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.grid-contactos h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Rodapé */
+
+.rodape {
+  background-color: #201915;
+  color: #fff;
+  padding: 1.5rem 1rem;
+}
+
+.rodape-content {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    background-color: #201915;
+    flex-direction: column;
+    padding: 0.75rem 1rem;
+    display: none;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+}
